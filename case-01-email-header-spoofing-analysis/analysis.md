@@ -7,9 +7,11 @@ The objective was to examine raw email headers to identify signs of sender spoof
 ---
 
 ## Tools Used
-- Linux (Ubuntu/Kali VM)
+- Linux (Ubuntu)
 - Sublime Text (manual header inspection & regex search)
 - grep / regex (IOC extraction)
+- Mxtool
+- whoisdomaintool
 - VirusTotal (IP and domain reputation – external validation)
 
 ---
