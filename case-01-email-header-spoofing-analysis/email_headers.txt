@@ -1,0 +1,36 @@
+========================================
+Sanitized Spoofed Email Header (Training)
+========================================
+Source: Simulated phishing email sample
+Purpose: Email header analysis practice
+Note: All indicators are sanitized
+----------------------------------------
+
+Received: from unknown (HELO mail[.]fakebank[.]example) [185.203.xxx.xxx]
+        by mx1[.]example[.]com with SMTP;
+        Tue, 07 Jan 2026 10:12:44 +0000
+
+Received: from mail[.]fakebank[.]example ([185.203.xxx.xxx])
+        by mx2[.]example[.]com with ESMTPS;
+        Tue, 07 Jan 2026 10:12:42 +0000
+
+From: FakeBank Security <security@fakebank[.]example>
+To: user@example[.]com
+Subject: Urgent – Verify Your Account
+Date: Tue, 07 Jan 2026 10:12:40 +0000
+Message-ID: <12345@mail[.]fakebank[.]example>
+Return-Path: alerts@fakebank-alerts[.]example
+
+Received-SPF: Fail (example.com: domain fakebank[.]example does not designate 185.203.xxx.xxx)
+Authentication-Results:
+  spf=fail;
+  dkim=fail;
+  dmarc=fail
+
+X-Mailer: Unknown Mail Client
+MIME-Version: 1.0
+Content-Type: text/html; charset=UTF-8
+
+----------------------------------------
+End of Sanitized Email Header
+========================================
